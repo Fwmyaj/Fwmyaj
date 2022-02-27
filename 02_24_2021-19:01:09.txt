@@ -1,0 +1,3 @@
+Scanned Result
+Type	Text
+Content	bitcoin:34RtKtbB8HDi5CgF47g7ozETVqjNwNxSGG?amount=0.00044602
