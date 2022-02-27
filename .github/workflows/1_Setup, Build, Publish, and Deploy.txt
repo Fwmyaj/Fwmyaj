@@ -1,0 +1,149 @@
+2022-02-19T06:40:56.1952497Z Requested labels: ubuntu-latest
+2022-02-19T06:40:56.1952551Z Job defined at: Fwmyaj/Fwmyaj/.github/workflows/google.yml@refs/heads/main
+2022-02-19T06:40:56.1952576Z Waiting for a runner to pick up this job...
+2022-02-19T06:40:56.6019399Z Job is waiting for a hosted runner to come online.
+2022-02-19T06:40:59.9549073Z Job is about to start running on the hosted runner: GitHub Actions 3 (hosted)
+2022-02-19T06:41:02.1613286Z Current runner version: '2.287.1'
+2022-02-19T06:41:02.1636812Z ##[group]Operating System
+2022-02-19T06:41:02.1637456Z Ubuntu
+2022-02-19T06:41:02.1637736Z 20.04.3
+2022-02-19T06:41:02.1637959Z LTS
+2022-02-19T06:41:02.1638243Z ##[endgroup]
+2022-02-19T06:41:02.1638516Z ##[group]Virtual Environment
+2022-02-19T06:41:02.1638922Z Environment: ubuntu-20.04
+2022-02-19T06:41:02.1639199Z Version: 20220213.1
+2022-02-19T06:41:02.1639698Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20220213.1/images/linux/Ubuntu2004-Readme.md
+2022-02-19T06:41:02.1640329Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F20220213.1
+2022-02-19T06:41:02.1640732Z ##[endgroup]
+2022-02-19T06:41:02.1641102Z ##[group]Virtual Environment Provisioner
+2022-02-19T06:41:02.1641410Z 1.0.0.0-main-20220202-1
+2022-02-19T06:41:02.1641713Z ##[endgroup]
+2022-02-19T06:41:02.1642277Z ##[group]GITHUB_TOKEN Permissions
+2022-02-19T06:41:02.1642806Z Contents: read
+2022-02-19T06:41:02.1643271Z Metadata: read
+2022-02-19T06:41:02.1643700Z ##[endgroup]
+2022-02-19T06:41:02.1646734Z Secret source: Actions
+2022-02-19T06:41:02.1647182Z Prepare workflow directory
+2022-02-19T06:41:02.3043334Z Prepare all required actions
+2022-02-19T06:41:02.3241905Z Getting action download info
+2022-02-19T06:41:02.5471601Z Download action repository 'actions/checkout@v2' (SHA:ec3a7ce113134d7a93b817d10a8272cb61118579)
+2022-02-19T06:41:03.9040527Z Download action repository 'google-github-actions/auth@v0' (SHA:8d125895b958610ec414ca4dae010257eaa814d3)
+2022-02-19T06:41:04.4605770Z Download action repository 'google-github-actions/get-gke-credentials@v0' (SHA:d11aa73aa9d09cad695c69d283e962a874f4b065)
+2022-02-19T06:41:05.2149897Z ##[group]Run actions/checkout@v2
+2022-02-19T06:41:05.2150130Z with:
+2022-02-19T06:41:05.2150312Z   repository: Fwmyaj/Fwmyaj
+2022-02-19T06:41:05.2150687Z   token: ***
+2022-02-19T06:41:05.2150847Z   ssh-strict: true
+2022-02-19T06:41:05.2151040Z   persist-credentials: true
+2022-02-19T06:41:05.2151214Z   clean: true
+2022-02-19T06:41:05.2151388Z   fetch-depth: 1
+2022-02-19T06:41:05.2151541Z   lfs: false
+2022-02-19T06:41:05.2151703Z   submodules: false
+2022-02-19T06:41:05.2151853Z env:
+2022-02-19T06:41:05.2152021Z   PROJECT_ID: 
+2022-02-19T06:41:05.2152207Z   GAR_LOCATION: us-central1
+2022-02-19T06:41:05.2152387Z   GKE_CLUSTER: cluster-1
+2022-02-19T06:41:05.2152571Z   GKE_ZONE: us-central1-c
+2022-02-19T06:41:05.2152747Z   DEPLOYMENT_NAME: gke-test
+2022-02-19T06:41:05.2152938Z   REPOSITORY: samples
+2022-02-19T06:41:05.2153109Z   IMAGE: static-site
+2022-02-19T06:41:05.2153283Z ##[endgroup]
+2022-02-19T06:41:07.1516012Z Syncing repository: Fwmyaj/Fwmyaj
+2022-02-19T06:41:07.1676066Z ##[group]Getting Git version info
+2022-02-19T06:41:07.1676707Z Working directory is '/home/runner/work/Fwmyaj/Fwmyaj'
+2022-02-19T06:41:07.1720992Z [command]/usr/bin/git version
+2022-02-19T06:41:07.3416322Z git version 2.35.1
+2022-02-19T06:41:07.3434501Z ##[endgroup]
+2022-02-19T06:41:07.3440792Z Deleting the contents of '/home/runner/work/Fwmyaj/Fwmyaj'
+2022-02-19T06:41:07.3445759Z ##[group]Initializing the repository
+2022-02-19T06:41:07.3450248Z [command]/usr/bin/git init /home/runner/work/Fwmyaj/Fwmyaj
+2022-02-19T06:41:07.3918116Z hint: Using 'master' as the name for the initial branch. This default branch name
+2022-02-19T06:41:07.3918880Z hint: is subject to change. To configure the initial branch name to use in all
+2022-02-19T06:41:07.3920212Z hint: of your new repositories, which will suppress this warning, call:
+2022-02-19T06:41:07.3920564Z hint: 
+2022-02-19T06:41:07.3922708Z hint: 	git config --global init.defaultBranch <name>
+2022-02-19T06:41:07.3923478Z hint: 
+2022-02-19T06:41:07.3926098Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2022-02-19T06:41:07.3927540Z hint: 'development'. The just-created branch can be renamed via this command:
+2022-02-19T06:41:07.3929918Z hint: 
+2022-02-19T06:41:07.3931048Z hint: 	git branch -m <name>
+2022-02-19T06:41:07.3933423Z Initialized empty Git repository in /home/runner/work/Fwmyaj/Fwmyaj/.git/
+2022-02-19T06:41:07.3952583Z [command]/usr/bin/git remote add origin https://github.com/Fwmyaj/Fwmyaj
+2022-02-19T06:41:07.4088336Z ##[endgroup]
+2022-02-19T06:41:07.4089238Z ##[group]Disabling automatic garbage collection
+2022-02-19T06:41:07.4093910Z [command]/usr/bin/git config --local gc.auto 0
+2022-02-19T06:41:07.4193961Z ##[endgroup]
+2022-02-19T06:41:07.4212631Z ##[group]Setting up auth
+2022-02-19T06:41:07.4214336Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-02-19T06:41:07.4241541Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-02-19T06:41:07.6658705Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-02-19T06:41:07.6724829Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-02-19T06:41:07.6946209Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2022-02-19T06:41:07.6978956Z ##[endgroup]
+2022-02-19T06:41:07.6979806Z ##[group]Fetching the repository
+2022-02-19T06:41:07.6988994Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +b0f039caa3e7115608b9f1fd91af6f3a3a2b57e5:refs/remotes/origin/main
+2022-02-19T06:41:08.1290419Z remote: Enumerating objects: 8, done.        
+2022-02-19T06:41:08.1291416Z remote: Counting objects:  12% (1/8)        
+2022-02-19T06:41:08.1292792Z remote: Counting objects:  25% (2/8)        
+2022-02-19T06:41:08.1294009Z remote: Counting objects:  37% (3/8)        
+2022-02-19T06:41:08.1295168Z remote: Counting objects:  50% (4/8)        
+2022-02-19T06:41:08.1295849Z remote: Counting objects:  62% (5/8)        
+2022-02-19T06:41:08.1296863Z remote: Counting objects:  75% (6/8)        
+2022-02-19T06:41:08.1297542Z remote: Counting objects:  87% (7/8)        
+2022-02-19T06:41:08.1298535Z remote: Counting objects: 100% (8/8)        
+2022-02-19T06:41:08.1299248Z remote: Counting objects: 100% (8/8), done.        
+2022-02-19T06:41:08.1300361Z remote: Compressing objects:  16% (1/6)        
+2022-02-19T06:41:08.1301067Z remote: Compressing objects:  33% (2/6)        
+2022-02-19T06:41:08.1302064Z remote: Compressing objects:  50% (3/6)        
+2022-02-19T06:41:08.1302758Z remote: Compressing objects:  66% (4/6)        
+2022-02-19T06:41:08.1303764Z remote: Compressing objects:  83% (5/6)        
+2022-02-19T06:41:08.1304439Z remote: Compressing objects: 100% (6/6)        
+2022-02-19T06:41:08.1305487Z remote: Compressing objects: 100% (6/6), done.        
+2022-02-19T06:41:08.1337223Z remote: Total 8 (delta 0), reused 0 (delta 0), pack-reused 0        
+2022-02-19T06:41:08.1786183Z From https://github.com/Fwmyaj/Fwmyaj
+2022-02-19T06:41:08.1787516Z  * [new ref]         b0f039caa3e7115608b9f1fd91af6f3a3a2b57e5 -> origin/main
+2022-02-19T06:41:08.1966506Z ##[endgroup]
+2022-02-19T06:41:08.1968129Z ##[group]Determining the checkout info
+2022-02-19T06:41:08.1969416Z ##[endgroup]
+2022-02-19T06:41:08.1970252Z ##[group]Checking out the ref
+2022-02-19T06:41:08.1974946Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2022-02-19T06:41:08.2056241Z Switched to a new branch 'main'
+2022-02-19T06:41:08.2056861Z branch 'main' set up to track 'origin/main'.
+2022-02-19T06:41:08.2058204Z ##[endgroup]
+2022-02-19T06:41:08.2137151Z [command]/usr/bin/git log -1 --format='%H'
+2022-02-19T06:41:08.2163469Z 'b0f039caa3e7115608b9f1fd91af6f3a3a2b57e5'
+2022-02-19T06:41:08.2343715Z ##[group]Run google-github-actions/auth@v0
+2022-02-19T06:41:08.2343914Z with:
+2022-02-19T06:41:08.2344088Z   token_format: access_token
+2022-02-19T06:41:08.2344400Z   workload_identity_provider: projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider
+2022-02-19T06:41:08.2344862Z   service_account: my-service-account@my-project.iam.gserviceaccount.com
+2022-02-19T06:41:08.2345132Z   create_credentials_file: true
+2022-02-19T06:41:08.2345319Z   cleanup_credentials: true
+2022-02-19T06:41:08.2345517Z   access_token_lifetime: 3600s
+2022-02-19T06:41:08.2345767Z   access_token_scopes: https://www.googleapis.com/auth/cloud-platform
+2022-02-19T06:41:08.2346022Z   id_token_include_email: false
+2022-02-19T06:41:08.2346191Z env:
+2022-02-19T06:41:08.2346334Z   PROJECT_ID: 
+2022-02-19T06:41:08.2346511Z   GAR_LOCATION: us-central1
+2022-02-19T06:41:08.2346684Z   GKE_CLUSTER: cluster-1
+2022-02-19T06:41:08.2346867Z   GKE_ZONE: us-central1-c
+2022-02-19T06:41:08.2347082Z   DEPLOYMENT_NAME: gke-test
+2022-02-19T06:41:08.2347253Z   REPOSITORY: samples
+2022-02-19T06:41:08.2347427Z   IMAGE: static-site
+2022-02-19T06:41:08.2347592Z ##[endgroup]
+2022-02-19T06:41:09.7825938Z Created credentials file at "/home/runner/work/Fwmyaj/Fwmyaj/gha-creds-808eaf4bfbccadf5.json"
+2022-02-19T06:41:09.7828170Z 
+2022-02-19T06:41:09.7858159Z 
+2022-02-19T06:41:09.9117681Z ##[error]google-github-actions/auth failed with: failed to generate Google Cloud federated token for projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider: {"error":"invalid_target","error_description":"The target service indicated by the \"audience\" parameters is invalid. This might either be because the pool or provider is disabled or deleted or because it doesn't exist."}
+2022-02-19T06:41:09.9238998Z Post job cleanup.
+2022-02-19T06:41:09.9827771Z Removed exported credentials at "/home/runner/work/Fwmyaj/Fwmyaj/gha-creds-808eaf4bfbccadf5.json".
+2022-02-19T06:41:09.9924744Z Post job cleanup.
+2022-02-19T06:41:10.1189745Z [command]/usr/bin/git version
+2022-02-19T06:41:10.1238219Z git version 2.35.1
+2022-02-19T06:41:10.1276236Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-02-19T06:41:10.1316399Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-02-19T06:41:10.1620974Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-02-19T06:41:10.1662044Z http.https://github.com/.extraheader
+2022-02-19T06:41:10.1671252Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2022-02-19T06:41:10.1763207Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-02-19T06:41:10.2558427Z Cleaning up orphan processes

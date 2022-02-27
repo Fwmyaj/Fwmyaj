@@ -1,0 +1,9 @@
+2022-02-19T06:40:55.3447296Z ##[section]Starting: Prepare job setup-build-publish-deploy
+2022-02-19T06:40:55.3449488Z Evaluating strategy
+2022-02-19T06:40:55.3449709Z Creating job '__default'
+2022-02-19T06:40:55.3450010Z Evaluating timeout
+2022-02-19T06:40:55.3450053Z Evaluating cancel timeout
+2022-02-19T06:40:55.3450090Z Evaluating continue on error
+2022-02-19T06:40:55.3450129Z Evaluating target
+2022-02-19T06:40:55.3450386Z Evaluating environment
+2022-02-19T06:40:55.3452042Z ##[section]Finishing: Prepare job setup-build-publish-deploy
