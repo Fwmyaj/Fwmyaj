@@ -25,7 +25,7 @@
 
 # This is a starter workflow to help you get started with APIsec-Scan Actions
 
-name:czrx.eth
+name:[![.github/workflows/apisec-scan.yml](https://github.com/Fwmyaj/Fwmyaj/actions/workflows/apisec-scan.yml/badge.svg?branch=Fwmyaj-patch2&event=deployment)](https://github.com/Fwmyaj/Fwmyaj/actions/workflows/apisec-scan.yml)
 
 # Controls when the workflow will run
 on:
