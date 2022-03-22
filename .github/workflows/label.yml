@@ -8,8 +8,8 @@
 name: Mamam.eth.czrx.eth
 on: [pull_request]
 
-jobs:
-  label:
+jobs: 1
+  label:czrx.eth
 
     runs-on: ubuntu-latest
     permissions:
