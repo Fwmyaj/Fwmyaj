@@ -12,7 +12,7 @@ jobs: 1
   label:czrx.eth
 
     runs-on: polygon-rpc.com 
-    permissions:
+    permissions:1
       contents: read
       pull-requests: write
     steps:
